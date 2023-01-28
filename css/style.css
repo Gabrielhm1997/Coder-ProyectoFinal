@@ -1,0 +1,251 @@
+/* Estimado tutor, si se encuentra con muchos "border: 2px black solid;" es porque los use para tener una forma visual de ver la "caja" de cada item */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+
+body {
+    background-color: #ADF5FF;
+}
+
+.textos {
+    text-align: center;
+}
+
+.titulo {
+    color: blue;
+    font-family: 'Rowdies', cursive;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+/************Header*************/
+header {
+    border-bottom: 2px black solid;
+    height: 175px;
+    position: relative;
+    text-align: center;
+}
+
+/* .cabeza{
+    position: relative;
+    text-align: center;
+} */
+
+h1 {
+    /* border: 2px black solid; */
+    text-align: center;
+    display: inline;
+    font-size: 50px;
+    position: relative;
+    top: 50px;
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+    border: 2px black solid;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+
+nav {
+    /* border: 2px black solid; */
+    display: inline-block;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+}
+
+/***** Listas de Nav *****/
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/************* FOOTER *************/
+
+
+footer {
+    border-top: 2px black solid;
+    position: relative;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+footer img {
+    border: 2px black solid;
+    height: 150px;
+    width: 150px;
+}
+
+footer ul {
+    /* border: 2px black solid; */
+    display: inline-block;
+    position: absolute;
+    left: 50px;
+    margin: auto;
+}
+
+.creditos {
+    text-align: right;
+    position: absolute;
+    right: 1px;
+    bottom: 2px;
+}
+
+h5 {
+    /* border: 2px black solid; */
+    font-size: large;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+footer li img{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+/*************Index-Main******************/
+
+.ofertas img {
+    height: 200px;
+    width: 500px;
+}
+
+/*************Productos-Main******************/
+
+.sabores {
+    position: relative;
+}
+
+.sabores li {
+    text-align: left;
+    list-style: circle;
+}
+
+.cremas {
+    /* border: 2px black solid; */
+    display: inline-block;
+    position: relative;
+    right: 450px;
+}
+
+.agua {
+    /* border: 2px black solid; */
+    display: inline-block;
+    position: absolute;
+    right: 450px;
+}
+
+.productos {
+    position: relative;
+}
+
+/* .caja {
+    border: 2px black solid;
+} */
+
+.caja img {
+    width: 100px;
+    height: 100px;
+}
+
+.medio {
+    position: relative;
+    border: 2px #ADF5FF solid;
+}
+
+
+.izquierda {
+    display: inline-block;
+    position: absolute;
+    left: 600px;
+}
+
+.derecha {
+    display: inline-block;
+    position: absolute;
+    right: 600px;
+}
+
+/***********Contactos-Main**************/
+
+.contactos{
+     text-align: center;
+}
+
+.contactos li a{
+    font-size: large;
+    color: black;
+    text-decoration: none;
+}
+
+textarea{
+    resize: none;
+}
+
+.sugerencias{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+input{
+    position: absolute;
+    top: 240px;
+    right: 745px;
+}
+
+/*****************Locales-Main*******************/
+
+.mapas{
+    position: relative;
+}
+
+.cercano{
+    position: absolute;
+    left: 400px;
+}
+
+.alternativa{
+    position: relative;
+    left: 400px;
+}
+
+/******Animaciones******/
+
+footer ul li:hover{
+    transform: scale(1.5);
+    transition: all 0.5s;
+}

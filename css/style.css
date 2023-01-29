@@ -24,6 +24,28 @@ body {
 
 /* Barra de navegacion */
 
+/* @media (max-width: 575px){
+
+    header .logo {
+        display: none;
+    }
+
+    .xs-header {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .xs-header-titulo {
+        display: block;
+        
+    }
+
+    .xs-header-nav {
+        display: block;
+    }
+}  */
+
+
 
 /* Cajas guia */
 

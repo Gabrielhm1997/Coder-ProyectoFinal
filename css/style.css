@@ -1,8 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
 
+/* font-family: 'Rowdies', cursive; */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /******Animaciones******/
 
-footer ul li:hover{
+footer ul li:hover {
     transform: scale(1.5);
     transition: all 0.5s;
+}
+
+body {
+    background: linear-gradient(to top, #2980b9, #6dd5fa);
+}
+
+.titulo {
+    font-family: 'Rowdies', cursive;
+    color: rgb(5, 5, 202);
+}
+
+/* Barra de navegacion */
+
+
+/* Cajas guia */
+
+header {
+    border: 2px black solid;
+}
+
+footer {
+    border: 2px black solid;
 }

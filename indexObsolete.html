@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -13,24 +13,24 @@
 
 <body>
 
-    <header>
+    <header id="inicio">
 
-        <div class="row container-fluid m-0 p-0">
-            <div
-                class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 d-flex justify-content-center align-items-center">
-                <img src="img/logo.jpg" alt="logo" class="img-fluid rounded-circle logo">
+        <div class="row container-fluid">
+
+            <div class="col-4 d-flex justify-content-center align-items-center">
+                <img src="img/logo-provicional.jpg" alt="Logo" class="img-fluid rounded-circle logo">
             </div>
 
-            <div
-                class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 d-flex justify-content-center align-items-center">
-                <h1 class="titulo fw-bold">Frosty Bite</h1>
+            <div class="col-4 d-flex justify-content-center align-items-center">
+                <h1 class="titulo">Frosty Bite</h1>
             </div>
+
 
             <!-- Barra de Navegacion -->
 
-            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="col-4">
                 <nav class="navbar navbar-expand-lg ">
-                    <div class="container justify-content-end">
+                    <div class="justify-content-end">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -38,20 +38,21 @@
                         </button>
                         <div class="collapse navbar-collapse justify-content-end text-end" id="navbarNav">
                             <ul class="navbar-nav">
-                                <li class="nav-item d-flex align-items-center justify-content-end m-2">
-                                    <a class="rounded-4 px-1" aria-current="page" href="#inicio">Inicio</a>
+                                <li class="nav-item ">
+                                    <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
                                 </li>
-                                <li class="nav-item d-flex align-items-center justify-content-end m-2">
-                                    <a class="rounded-4 px-1" href="html/productos.html">Productos</a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="html/productos.html">Productos</a>
                                 </li>
-                                <li class="nav-item d-flex align-items-center justify-content-end m-2">
-                                    <a class="rounded-4 px-1" href="html/locales.html">Locales</a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="html/locales.html">Locales</a>
                                 </li>
-                                <li class="nav-item d-flex align-items-center justify-content-end m-2">
-                                    <a class="rounded-4 px-1" href="html/empresa.html">Empresa</a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="html/empresa.html">Empresa</a>
                                 </li>
-                                <li class="nav-item d-flex align-items-center justify-content-end m-2">
-                                    <a class="rounded-4 px-1" href="html/contacto.html">Contacto</a>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="html/contacto.html">Contacto</a>
                                 </li>
                             </ul>
                         </div>
@@ -64,10 +65,10 @@
     <main>
 
         <div>
-            <h2 class="text-center subtitulo fw-bold">Ofertas</h2>
+            <h2 class="text-center">Ofertas</h2>
         </div>
 
-        <div class="row container-fluid justify-content-center m-0 p-0" data-bs-theme="dark">
+        <div class="row container-fluid justify-content-center" data-bs-theme="dark">
             <div class="col-6">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -103,17 +104,18 @@
             </div>
         </div>
 
+
         <div>
-            <h3 class="text-center subtitulo fw-bold">Novedades</h3>
+            <h3 class="text-center">Novedades</h3>
         </div>
 
     </main>
 
     <footer>
 
-        <div class="row container-fluid m-0 p-0">
+        <div class="row container-fluid">
 
-            <div class="footer-nav col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 row container-fluid m-0 p-0">
+            <div class="footer-nav col-12 row">
                 <ul class="nav flex-column grid gap-0 row-gap-3 p-0">
                     <li class="nav-item p-1 g-col-6">
                         <a class="d-flex justify-content-center align-items-center" href="https://es-la.facebook.com/"
@@ -137,27 +139,24 @@
                 </ul>
             </div>
 
-            <div
-                class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 d-flex justify-content-center align-items-center">
+            <div class="col-12 d-flex justify-content-center align-items-center">
 
                 <div class="d-flex justify-content-center">
-                    <img src="img/logo.jpg" alt="logo" class="img-fluid rounded-circle logo">
+                    <img src="img/logo-provicional.jpg" alt="logo" class="img-fluid rounded-circle logo">
                 </div>
 
                 <h5 class="fs-6">Copyright 2022. Todos los derechos reservados</h5>
 
             </div>
 
-            <div
-                class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 d-flex align-items-end justify-content-end">
+            <div class="col-12 d-flex align-items-end justify-content-end">
                 <h5 class="fs-6 creditos">Creado por Gabriel Navarro</h5>
             </div>
 
         </div>
 
     </footer>
-
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>

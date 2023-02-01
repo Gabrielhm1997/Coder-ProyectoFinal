@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frosty Bite</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -16,18 +17,18 @@
 
         <div class="row container-fluid m-0 p-0">
             <div
-                class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 d-flex justify-content-center align-items-center">
+                class="col-2 col-sm-3 col-md-3 col-lg-3 col-xl-4 col-xxl-4 d-flex justify-content-center align-items-center">
                 <img src="../img/logo.jpg" alt="logo" class="img-fluid rounded-circle logo">
             </div>
 
             <div
-                class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 d-flex justify-content-center align-items-center">
+                class="col-8 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4 d-flex justify-content-center align-items-center">
                 <h1 class="titulo fw-bold">Locales</h1>
             </div>
 
             <!-- Barra de Navegacion -->
 
-            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="col-2 col-sm-3 col-md-3 col-lg-3 col-xl-4 col-xxl-4">
                 <nav class="navbar navbar-expand-lg ">
                     <div class="container justify-content-end">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -62,35 +63,48 @@
 
     <main>
 
-        <h2>Locales cercanos a ti</h2>
+        <h2 class="text-center subtitulo">Locales cercanos a ti</h2>
 
-        <div>
+        <div class="container-fluid">
 
-            <div>
-                <h3>Local mas cercano</h3>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7971.816261849847!2d-68.84212148534266!3d-32.852244734872635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e08973aaaff05%3A0x4cb7a65e461172ef!2sGrido%20Helado!5e0!3m2!1ses!2sar!4v1673453296226!5m2!1ses!2sar"
-                    width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="d-flex justify-content-center row">
+
+                <div class="col-12 col-xl-5 col-lg-5 col-md-5 col-sm-12 justify-content-center">
+
+                    <h3 class="text-center subtitulodos">Local mas cercano</h3>
+                    <div class="justify-content-center d-flex">
+                        <iframe class="locales"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7971.816261849847!2d-68.84212148534266!3d-32.852244734872635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e08973aaaff05%3A0x4cb7a65e461172ef!2sGrido%20Helado!5e0!3m2!1ses!2sar!4v1673453296226!5m2!1ses!2sar"
+                            allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="col-12 col-xl-5 col-lg-5 col-md-5 col-sm-12">
+
+                    <h3 class="text-center subtitulodos">Alternativa</h3>
+                    <div class=" justify-content-center d-flex">
+                        <iframe class="locales"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7971.804705897836!2d-68.84750570239368!3d-32.852373354635546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e088fdeade303%3A0x9bf7359e7b1fa365!2sGrido%20Helado!5e0!3m2!1ses!2sar!4v1673453328374!5m2!1ses!2sar"
+                            allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             </div>
-
-            <div>
-                <h3>Alternativa</h3>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7971.804705897836!2d-68.84750570239368!3d-32.852373354635546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e088fdeade303%3A0x9bf7359e7b1fa365!2sGrido%20Helado!5e0!3m2!1ses!2sar!4v1673453328374!5m2!1ses!2sar"
-                    width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
-
         </div>
 
-        <div>
-            <h3>Distribuidora</h3>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26817.053975494633!2d-68.85769125080607!3d-32.84176321630421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e08a18d94bea3%3A0x1fa60fc312ec8b1e!2sGrido%20Helado!5e0!3m2!1ses!2sar!4v1673453524720!5m2!1ses!2sar"
-                width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="container-fluid">
+            <div class="d-flex justify-content-center">
+                <div>
+                    <h3 class="text-center subtitulodos">Distribuidora</h3>
+
+                    <iframe class="locales"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26817.053975494633!2d-68.85769125080607!3d-32.84176321630421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e08a18d94bea3%3A0x1fa60fc312ec8b1e!2sGrido%20Helado!5e0!3m2!1ses!2sar!4v1673453524720!5m2!1ses!2sar"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
         </div>
     </main>
 
@@ -111,7 +125,9 @@
             <h5>Creado por Gabriel Navarro</h5>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

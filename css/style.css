@@ -6,6 +6,65 @@
     padding: 0px;
 }
 
+html {
+    font-size: 16px;
+}
+
+/* Media Query */
+
+@media (max-width:768px) {
+
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    html {
+        font-size: 9px;
+    }
+
+    /* header .logo{
+        display: none;
+    } */
+
+    .creditos {
+        display: none;
+    }
+
+    footer .logo {
+        box-shadow: 3px 3px 3px 3px black;
+    }
+
+    header .logo {
+        box-shadow: 3px 3px 3px 3px black;
+    }
+
+    header a {
+        box-shadow: 0px 3px 0px #034470;
+    }
+}
+
+@media (max-width: 379px) {
+
+    html {
+        font-size: 7px;
+    }
+
+    footer .logo {
+        box-shadow: 1px 1px 1px 1px black;
+    }
+
+    header .logo {
+        box-shadow: 1px 1px 1px 1px black;
+    }
+
+    header a {
+        box-shadow: 0px 1px 0px #034470;
+    }
+}
+
 body {
     background: linear-gradient(to top, #2980b9, #6dd5fa);
     /* #2980b9 */
@@ -15,9 +74,7 @@ body {
 
 .titulo {
     font-family: 'Rowdies', cursive;
-    /* color: rgb(5, 5, 202); */
-    font-size: 4.5vw;
-    /* background: -webkit-linear-gradient(rgb(5, 5, 202), rgba(4, 4, 77, 0.938)); */
+    font-size: 4rem;
     background: -webkit-linear-gradient(blue, #000046);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -25,7 +82,15 @@ body {
 
 .subtitulo {
     font-family: 'Rowdies', cursive;
-    font-size: 2.5vw;
+    font-size: 3rem;
+    background: -webkit-linear-gradient(blue, #000046);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitulodos {
+    font-family: 'Rowdies', cursive;
+    font-size: 2rem;
     background: -webkit-linear-gradient(blue, #000046);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -40,11 +105,12 @@ body {
 
 header {
     border-bottom: 2px black solid;
+    padding-bottom: 5px;
 }
 
 
 header .logo {
-    height: 90%;
+    height: 85%;
     box-shadow: 6px 6px 6px 6px black;
 }
 
@@ -53,7 +119,7 @@ header a {
     font-family: 'Rowdies';
     list-style: none;
     text-decoration: none;
-    font-size: 1.65vw;
+    font-size: 1rem;
     background-color: whitesmoke;
     box-shadow: 0px 6px 0px #034470;
 }
@@ -63,12 +129,6 @@ header a:active {
     box-shadow: 0px 0px 0px #034470;
 }
 
-/* Carrusel */
-
-.carrusel img {
-
-    height: 20vw;
-}
 
 /* Footer */
 
@@ -102,13 +162,127 @@ footer .logo {
     box-shadow: 4px 4px 4px 4px black;
 }
 
+/* Inicio */
+
+/* Carrusel */
+
+.carrusel img {
+
+    height: 20vw;
+}
+
+/* Productos */
+
+.sabores{
+    border: 2px black solid;
+}
+
+.agua{
+    background-color: #000046;
+    border-bottom: 2px solid black;
+}
+
+.cremas{
+    background-color: #000046;
+    border-bottom: 2px solid black;
+}
+.sabores h4{
+    font-family: 'Rowdies', cursive;
+    color: #fafafa;
+    text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
+}
+
+.sabores ul li {
+    list-style: none;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.tarjetaProducto {
+    width: 10rem;
+    height: 17.5rem;
+    background-color: #000046;
+    color: #fafafa;
+}
+
+.filtroBlur img{
+    height: 10rem;
+}
+
+.filtroBlur {
+    position: relative;
+}
+
+.filtroTexto {
+    font-size: 1.25rem;
+    position: absolute;
+    top: 10%;
+    opacity: 0;
+    transition: 0.3s;
+    text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
+}
+
+.filtroBlur img {
+    transition: 0.3s;
+}
+
+.filtroBlur:hover :not(img) {
+    opacity: 100;
+}
+
+.filtroBlur:hover :not(p) {
+    filter: blur(5px) brightness(80%);
+}
+
+.modalDialogo {
+    color: #000046;
+}
+
+.modal-body p{
+    font-size: 2rem;
+}
+
+.btn-outline-custom {
+    --bs-btn-color: #000046;
+    --bs-btn-border-color: #000046;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #000046;
+    --bs-btn-hover-border-color: #000046;
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #000046;
+    --bs-btn-active-border-color: #000046;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #000046;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #000046;
+    --bs-gradient: none;
+}
+
+/* Locales */
+
+iframe {
+
+    height: 17.5rem;
+    width: 35rem;
+}
+
+.locales {
+    border: #000046 2px solid;
+    border-radius: 5px;
+}
+
+/* Empresa */
+
+.empresa p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+
 /* Media Query */
 
 @media (max-width: 575.98px) {
-
-    /* header .logo{
-        display: none;
-    } */
 
     .creditos {
         display: none;
@@ -125,6 +299,29 @@ footer .logo {
     header a {
         box-shadow: 0px 3px 0px #034470;
     }
+
+    header a:active {
+        transform: translateY(3px);
+        box-shadow: 0px 0px 0px #034470;
+    }
 }
 
-/* Cajas guia */
+@media (max-width: 379px) {
+
+    footer .logo {
+        box-shadow: 1px 1px 1px 1px black;
+    }
+
+    header .logo {
+        box-shadow: 1px 1px 1px 1px black;
+    }
+
+    header a {
+        box-shadow: 0px 1.5px 0px #034470;
+    }
+
+    header a:active {
+        transform: translateY(1.5px);
+        box-shadow: 0px 0px 0px #034470;
+    }
+}

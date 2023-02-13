@@ -1,0 +1,70 @@
+/* Productos */
+
+/* Sabores */
+
+.sabores {
+
+    border: 2px black solid;
+
+    h4 {
+        font-family: $tipoLetraUno, cursive;
+        color: $colorB;
+        text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
+    }
+
+    ul {
+        li {
+            list-style: none;
+            font-size: 1.5rem;
+            font-family: $tipoLetraDos;
+        }
+    }
+
+    .agua {
+        background-color: $colorP;
+        border-bottom: 2px solid black;
+    }
+
+    .cremas {
+        background-color: $colorP;
+        border-bottom: 2px solid black;
+    }
+}
+
+/* Tarjete de Productos */
+
+.tarjetaProducto {
+
+    width: 13rem;
+    //height: 17.5rem;
+    background-color: $colorP;
+    color: $colorB;
+
+    .filtroBlur{
+        position: relative;
+
+        img{
+            height: 10rem;
+            transition: 0.3s;
+        }
+
+        .filtroTexto {
+            font-size: 1.25rem;
+            position: absolute;
+            top: 10%;
+            opacity: 0;
+            transition: 0.3s;
+            text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
+        }
+
+        &:hover :not(img) {
+            opacity: 100;
+        }
+        
+        &:hover :not(p) {
+            filter: blur(5px) brightness(80%);
+        }
+    }
+
+    
+}

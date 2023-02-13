@@ -2,3 +2,26 @@
 
 /* Carrusel */
 
+.carrusel {
+
+    transition: all 0.2s;
+
+    img {
+        height: 25rem;
+        width: 50vw;
+    }
+}
+
+/* Novedades */
+
+.novedad {
+
+    img {
+        height: 10rem;
+        width: 10rem;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+}

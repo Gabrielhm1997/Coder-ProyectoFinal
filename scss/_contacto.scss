@@ -1,0 +1,16 @@
+.contacto{
+    ul{
+        li{
+            list-style: none;
+
+            a{
+                color: $colorP;
+                text-decoration: none;
+
+                &:hover{
+                    color: $colorB;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+/* Header */
+
+header {
+    border-bottom: 2px black solid;
+    padding-bottom: 5px;
+
+    .logo {
+        height: 17.5vh;
+        // 85%
+        box-shadow: 4px 4px 4px 4px black;
+    }
+
+    /* Barra de Navegacion */
+    
+    a {
+        color: blue;
+        font-family: $tipoLetraUno;
+        list-style: none;
+        text-decoration: none;
+        font-size: 1.5rem;
+        background-color: $colorB;
+        box-shadow: 0px 5px 0px $colorSombraNav;
+
+        &:active{
+            transform: translateY(5px);
+            box-shadow: 0px 0px 0px;
+        }
+    }
+}

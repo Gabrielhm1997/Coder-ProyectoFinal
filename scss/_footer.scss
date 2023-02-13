@@ -1,0 +1,24 @@
+/* Footer */
+
+footer{
+
+    border-top: 2px black solid;
+
+    .logo{
+        width: 10rem;
+        height: 10rem;
+        box-shadow: 4px 4px 4px 4px black;
+    }
+
+
+    a{
+        i{
+            font-size: 2rem;
+            color: $colorP;
+
+            &:hover {
+                color: $colorB;
+            }
+        }
+    }
+}

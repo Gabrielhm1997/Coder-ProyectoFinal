@@ -1,0 +1,37 @@
+/* Configuraciones Basicas */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* Body */
+
+body {
+    background: linear-gradient(to top, #2980b9, #6dd5fa);
+}
+
+
+.titulo{
+    font-family: $tipoLetraUno, cursive;
+    background: -webkit-linear-gradient(blue, $colorP);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+    padding: 0px;
+    margin: 0px;
+}
+
+// Bucle para tamaño de los H
+
+@for $i from 1 through 3 {
+    h#{$i} {
+        font-size: 6rem - $i;
+    }
+}

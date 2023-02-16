@@ -45,8 +45,7 @@ h3 {
   font-size: 2rem;
 }
 .modalDialogo .modal-footer {
-  /* Nose porque a la hora de reemplazar los colores por las "variables" de colores no me las tomaba asi que lo deje tal cual estaba en el css.
-  Porque como dicen los programadores, si algo funciona no se toca. */
+  /* Nose porque a la hora de reemplazar los colores por las "variables" de colores no me las tomaba asi que lo deje tal cual estaba en el css. */
 }
 .modalDialogo .modal-footer .btn-outline-custom {
   --bs-btn-color: #000046;
@@ -108,18 +107,22 @@ footer a i:hover {
 
 /* Inicio */
 /* Carrusel */
-.carrusel {
-  transition: all 0.2s;
+.carousel-inner {
+  border: 5px solid #000046;
 }
-.carrusel img {
+.carousel-inner .carousel-item {
+  transition: all 1.25s;
+}
+.carousel-inner img {
   height: 25rem;
-  width: 50vw;
+  width: 100%;
 }
 
 /* Novedades */
 .novedad img {
-  height: 10rem;
-  width: 10rem;
+  height: 12.5rem;
+  width: 12.5rem;
+  border: 3px solid #000046;
 }
 .novedad img:hover {
   transform: scale(1.5);
@@ -195,12 +198,13 @@ footer a i:hover {
   filter: blur(5px) brightness(80%);
 }
 
-main img {
+.empresa .row .col-12 img {
   width: 100%;
   height: 100%;
   max-height: 400px;
+  margin: 5px;
 }
-main p {
+.empresa .row .col-12 p {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.25rem;
 }
@@ -208,15 +212,19 @@ main p {
 /* Mediaqueries */
 @media (max-width: 768px) {
   html {
-    font-size: 12px;
+    font-size: 14px;
   }
   .carrusel {
     width: 98vw;
   }
+  .novedad img {
+    height: 15rem;
+    width: 15rem;
+  }
 }
 @media (max-width: 575.98px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
   header .logo {
     box-shadow: 3px 3px 3px 3px black;
@@ -237,7 +245,7 @@ main p {
 }
 @media (max-width: 405px) {
   html {
-    font-size: 8px;
+    font-size: 10px;
   }
   footer .logo {
     box-shadow: 1px 1px 1px 1px black;

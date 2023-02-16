@@ -35,14 +35,14 @@
 
 .tarjetaProducto {
 
-    width:13rem;
+    width: 13rem;
     background-color: $colorP;
     color: $colorB;
 
-    .filtroBlur{
+    .filtroBlur {
         position: relative;
 
-        img{
+        img {
             height: 10rem;
             transition: 0.3s;
         }
@@ -59,11 +59,11 @@
         &:hover :not(img) {
             opacity: 100;
         }
-        
+
         &:hover :not(p) {
             filter: blur(5px) brightness(80%);
         }
     }
 
-    
+
 }

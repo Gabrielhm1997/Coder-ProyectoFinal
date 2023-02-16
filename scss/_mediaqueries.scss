@@ -3,43 +3,44 @@
 @media (max-width:768px) {
 
     html {
-        font-size: 12px;
+
+        font-size: 14px;
     }
 
-    .carrusel{
+    .carrusel {
+
         width: 98vw;
     }
 
-    header{
+    .novedad {
 
-        .logo{
-
+        img {
+            height: 15rem;
+            width: 15rem;
         }
     }
-
-    .tarjetaProducto {
-        
-    }
-
 }
 
 @media (max-width: 575.98px) {
 
     html {
-        font-size: 10px;
+        font-size: 12px;
     }
 
 
     header {
 
         .logo {
+
             box-shadow: 3px 3px 3px 3px black;
         }
 
         a {
+
             box-shadow: 0px 3px 0px $colorSombraNav;
 
             &:active {
+
                 transform: translateY(3px);
                 box-shadow: 0px 0px 0px $colorSombraNav;
             }
@@ -58,14 +59,12 @@
             box-shadow: 3px 3px 3px 3px black;
         }
     }
-
-
 }
 
-@media (max-width: 405px) { //379px
+@media (max-width: 405px) {
 
     html {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     footer .logo {

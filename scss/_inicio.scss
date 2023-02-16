@@ -2,13 +2,18 @@
 
 /* Carrusel */
 
-.carrusel {
+.carousel-inner {
 
-    transition: all 0.2s;
+    border: 5px solid $colorP;
+
+    .carousel-item {
+
+        transition: all 1.25s;
+    }
 
     img {
         height: 25rem;
-        width: 50vw;
+        width: 100%;
     }
 }
 
@@ -17,8 +22,10 @@
 .novedad {
 
     img {
-        height: 10rem;
-        width: 10rem;
+
+        height: 12.5rem;
+        width: 12.5rem;
+        border: 3px solid $colorP;
 
         &:hover {
             transform: scale(1.5);

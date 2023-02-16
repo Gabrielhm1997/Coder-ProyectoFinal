@@ -1,13 +1,13 @@
-.contacto{
-    ul{
-        li{
+.contacto {
+    ul {
+        li {
             list-style: none;
 
-            a{
+            a {
                 color: $colorP;
                 text-decoration: none;
 
-                &:hover{
+                &:hover {
                     color: $colorB;
                 }
             }

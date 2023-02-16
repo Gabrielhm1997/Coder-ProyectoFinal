@@ -26,15 +26,15 @@ body {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4.5rem;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 /* Modal */
@@ -72,7 +72,7 @@ header {
   /* Barra de Navegacion */
 }
 header .logo {
-  height: 17.5vh;
+  height: 17.5vw;
   box-shadow: 4px 4px 4px 4px black;
 }
 header a {
@@ -193,6 +193,61 @@ footer a i:hover {
 }
 .tarjetaProducto .filtroBlur:hover :not(p) {
   filter: blur(5px) brightness(80%);
+}
+
+main img {
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+}
+main p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+}
+
+/* Mediaqueries */
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .carrusel {
+    width: 98vw;
+  }
+}
+@media (max-width: 575.98px) {
+  html {
+    font-size: 10px;
+  }
+  header .logo {
+    box-shadow: 3px 3px 3px 3px black;
+  }
+  header a {
+    box-shadow: 0px 3px 0px black;
+  }
+  header a:active {
+    transform: translateY(3px);
+    box-shadow: 0px 0px 0px black;
+  }
+  footer .creditos {
+    display: none;
+  }
+  footer .logo {
+    box-shadow: 3px 3px 3px 3px black;
+  }
+}
+@media (max-width: 405px) {
+  html {
+    font-size: 8px;
+  }
+  footer .logo {
+    box-shadow: 1px 1px 1px 1px black;
+  }
+  header .logo {
+    box-shadow: 1px 1px 1px 1px black;
+  }
+  header a {
+    box-shadow: 0px 1px 0px #034470;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,82 @@
+/* Mediaqueries */
+
+@media (max-width:768px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    .carrusel{
+        width: 98vw;
+    }
+
+    header{
+
+        .logo{
+
+        }
+    }
+
+    .tarjetaProducto {
+        
+    }
+
+}
+
+@media (max-width: 575.98px) {
+
+    html {
+        font-size: 10px;
+    }
+
+
+    header {
+
+        .logo {
+            box-shadow: 3px 3px 3px 3px black;
+        }
+
+        a {
+            box-shadow: 0px 3px 0px $colorSombraNav;
+
+            &:active {
+                transform: translateY(3px);
+                box-shadow: 0px 0px 0px $colorSombraNav;
+            }
+        }
+
+    }
+
+    footer {
+
+        .creditos {
+            display: none;
+        }
+
+
+        .logo {
+            box-shadow: 3px 3px 3px 3px black;
+        }
+    }
+
+
+}
+
+@media (max-width: 405px) { //379px
+
+    html {
+        font-size: 8px;
+    }
+
+    footer .logo {
+        box-shadow: 1px 1px 1px 1px black;
+    }
+
+    header .logo {
+        box-shadow: 1px 1px 1px 1px black;
+    }
+
+    header a {
+        box-shadow: 0px 1px 0px #034470;
+    }
+}

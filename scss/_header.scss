@@ -10,7 +10,7 @@ header {
     }
 
     /* Barra de Navegacion */
-    
+
     a {
         color: blue;
         font-family: $tipoLetraUno;
@@ -20,9 +20,32 @@ header {
         background-color: $colorB;
         box-shadow: 0px 5px 0px $colorSombraNav;
 
-        &:active{
+        &:active {
             transform: translateY(5px);
             box-shadow: 0px 0px 0px;
         }
     }
+
+    /* Cambiar el color del menu hamburguesa */
+
+    .navbar-toggler {
+
+        display: flex;
+        align-items: center;
+
+        border-width:  2px;
+        border-color: $colorP;
+
+        width: 4rem;
+        height: 4rem;
+
+        .navbar-toggler-icon {
+
+            width: 40px;
+            height: 40px;
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 70, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+    }
 }
+
+

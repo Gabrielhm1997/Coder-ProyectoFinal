@@ -10,6 +10,9 @@ html {
 
 /* Body */
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background: linear-gradient(to top, #2980b9, #6dd5fa);
 }
 
@@ -69,6 +72,7 @@ header {
   border-bottom: 2px black solid;
   padding-bottom: 5px;
   /* Barra de Navegacion */
+  /* Cambiar el color del menu hamburguesa */
 }
 header .logo {
   height: 17.5vw;
@@ -87,9 +91,23 @@ header a:active {
   transform: translateY(5px);
   box-shadow: 0px 0px 0px;
 }
+header .navbar-toggler {
+  display: flex;
+  align-items: center;
+  border-width: 2px;
+  border-color: #000046;
+  width: 4rem;
+  height: 4rem;
+}
+header .navbar-toggler .navbar-toggler-icon {
+  width: 40px;
+  height: 40px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 70, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 
 /* Footer */
 footer {
+  margin-top: auto;
   border-top: 2px black solid;
 }
 footer .logo {
@@ -123,9 +141,10 @@ footer a i:hover {
   height: 12.5rem;
   width: 12.5rem;
   border: 3px solid #000046;
+  transition: all 0.2s;
 }
 .novedad img:hover {
-  transform: scale(1.5);
+  transform: scale(1.15);
 }
 
 .contacto ul li {
@@ -172,7 +191,7 @@ footer a i:hover {
 
 /* Tarjete de Productos */
 .tarjetaProducto {
-  width: 13rem;
+  width: 15rem;
   background-color: #000046;
   color: #fafafa;
 }
@@ -180,7 +199,7 @@ footer a i:hover {
   position: relative;
 }
 .tarjetaProducto .filtroBlur img {
-  height: 10rem;
+  height: 12rem;
   transition: 0.3s;
 }
 .tarjetaProducto .filtroBlur .filtroTexto {
@@ -224,7 +243,7 @@ footer a i:hover {
 }
 @media (max-width: 575.98px) {
   html {
-    font-size: 12px;
+    font-size: 13px;
   }
   header .logo {
     box-shadow: 3px 3px 3px 3px black;
@@ -245,7 +264,7 @@ footer a i:hover {
 }
 @media (max-width: 405px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
   footer .logo {
     box-shadow: 1px 1px 1px 1px black;

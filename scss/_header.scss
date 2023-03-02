@@ -5,9 +5,10 @@ header {
     border-bottom: 2px black solid;
     padding-bottom: 5px;
 
-    h1{
+    h1 {
         margin-left: 10px;
     }
+
     .logo {
         height: 17vw;
         max-height: 8rem;
@@ -18,8 +19,8 @@ header {
 
     /* Barra de Navegacion */
 
-    li{
-        a{
+    li {
+        a {
             color: $colorB;
             font-family: $tipoLetraUno;
             list-style: none;
@@ -27,11 +28,13 @@ header {
             font-size: 1.75rem;
             text-shadow: 1.2px 1.2px 0 black, 1.2px -1.2px 0 black, -1.2px 1.2px 0 black, -1.2px -1.2px 0 black;
             transition: all 0.2s;
-            &:hover{
+
+            &:hover {
                 transform: scale(1.1);
             }
         }
     }
+
     /* Cambiar el color del menu hamburguesa */
 
     .navbar-toggler {

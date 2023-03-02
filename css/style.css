@@ -43,10 +43,9 @@ h3 {
 .modalDialogo .modal-body p {
   font-size: 2rem;
 }
-.modalDialogo .modal-footer {
-  /* Nose porque a la hora de reemplazar los colores por las "variables" de colores no me las tomaba asi que lo deje tal cual estaba en el css. */
-}
-.modalDialogo .modal-footer .btn-outline-custom {
+
+/* Nose porque a la hora de reemplazar los colores por las "variables" de colores no me las tomaba asi que lo deje tal cual estaba en el css. */
+.btn-outline-custom {
   --bs-btn-color: #000046;
   --bs-btn-border-color: #000046;
   --bs-btn-hover-color: #fff;
@@ -190,7 +189,7 @@ footer a i:hover {
   border-bottom: 2px solid black;
 }
 
-/* Tarjete de Productos */
+/* Tarjeta de Productos */
 .tarjetaProducto {
   width: 15rem;
   background-color: #000046;

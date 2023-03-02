@@ -1,5 +1,35 @@
 /* Mediaqueries */
 
+@media (max-width:991px) {
+
+    header {
+        position: fixed;
+        top: auto;
+        min-width: 100vw;
+        z-index: 10;
+        background-color: #6dd5fa;
+
+        .offcanvas-body {
+            background-color: #00008B;
+        }
+    }
+
+    main {
+        margin-top: 25vh;
+    }
+
+    footer {
+        .bi-house {
+            display: none;
+        }
+    }
+
+    .carrusel {
+        width: 100vw;
+    }
+}
+
+
 @media (max-width:768px) {
 
     html {
@@ -7,9 +37,8 @@
         font-size: 14px;
     }
 
-    .carrusel {
-
-        width: 98vw;
+    main {
+        margin-top: 20vh;
     }
 
     .novedad {
@@ -27,6 +56,9 @@
         font-size: 13px;
     }
 
+    main {
+        margin-top: 15vh;
+    }
 
     header {
 
@@ -34,18 +66,6 @@
 
             box-shadow: 3px 3px 3px 3px black;
         }
-
-        a {
-
-            box-shadow: 0px 3px 0px $colorSombraNav;
-
-            &:active {
-
-                transform: translateY(3px);
-                box-shadow: 0px 0px 0px $colorSombraNav;
-            }
-        }
-
     }
 
     footer {
@@ -75,7 +95,4 @@
         box-shadow: 1px 1px 1px 1px black;
     }
 
-    header a {
-        box-shadow: 0px 1px 0px #034470;
-    }
 }

@@ -28,10 +28,6 @@ body {
   margin: 0px;
 }
 
-h1 {
-  font-size: 4.5rem;
-}
-
 h2 {
   font-size: 3.5rem;
 }
@@ -74,22 +70,27 @@ header {
   /* Barra de Navegacion */
   /* Cambiar el color del menu hamburguesa */
 }
+header h1 {
+  margin-left: 10px;
+}
 header .logo {
-  height: 17.5vw;
+  height: 17vw;
+  max-height: 8rem;
+  width: 17vw;
+  max-width: 8rem;
   box-shadow: 4px 4px 4px 4px black;
 }
-header a {
-  color: blue;
+header li a {
+  color: #fafafa;
   font-family: "Rowdies";
   list-style: none;
   text-decoration: none;
-  font-size: 1.5rem;
-  background-color: #fafafa;
-  box-shadow: 0px 5px 0px black;
+  font-size: 1.75rem;
+  text-shadow: 1.2px 1.2px 0 black, 1.2px -1.2px 0 black, -1.2px 1.2px 0 black, -1.2px -1.2px 0 black;
+  transition: all 0.2s;
 }
-header a:active {
-  transform: translateY(5px);
-  box-shadow: 0px 0px 0px;
+header li a:hover {
+  transform: scale(1.1);
 }
 header .navbar-toggler {
   display: flex;
@@ -229,12 +230,33 @@ footer a i:hover {
 }
 
 /* Mediaqueries */
+@media (max-width: 991px) {
+  header {
+    position: fixed;
+    top: auto;
+    min-width: 100vw;
+    z-index: 10;
+    background-color: #6dd5fa;
+  }
+  header .offcanvas-body {
+    background-color: #00008B;
+  }
+  main {
+    margin-top: 25vh;
+  }
+  footer .bi-house {
+    display: none;
+  }
+  .carrusel {
+    width: 100vw;
+  }
+}
 @media (max-width: 768px) {
   html {
     font-size: 14px;
   }
-  .carrusel {
-    width: 98vw;
+  main {
+    margin-top: 20vh;
   }
   .novedad img {
     height: 15rem;
@@ -245,15 +267,11 @@ footer a i:hover {
   html {
     font-size: 13px;
   }
+  main {
+    margin-top: 15vh;
+  }
   header .logo {
     box-shadow: 3px 3px 3px 3px black;
-  }
-  header a {
-    box-shadow: 0px 3px 0px black;
-  }
-  header a:active {
-    transform: translateY(3px);
-    box-shadow: 0px 0px 0px black;
   }
   footer .creditos {
     display: none;
@@ -271,9 +289,6 @@ footer a i:hover {
   }
   header .logo {
     box-shadow: 1px 1px 1px 1px black;
-  }
-  header a {
-    box-shadow: 0px 1px 0px #034470;
   }
 }
 
